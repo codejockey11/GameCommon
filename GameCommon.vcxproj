@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cefbae9c-ccc7-46fd-95ff-a9bd00b3f9f3}</ProjectGuid>
+    <RootNamespace>GameCommon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;C:\Program Files\MySQL\MySQL Server 8.0\include;C:\Users\junk_\source\repos\vcpkg-master\buildtrees\curl\src\url-7_86_0-3d3d4aefd3.clean\include;C:\Users\junk_\source\repos\zlib-1.3.1\out\build\x64-Debug;C:\Users\junk_\source\repos\zlib-1.3.1</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;C:\Program Files\MySQL\MySQL Server 8.0\lib;C:\Users\junk_\source\repos\vcpkg-master\buildtrees\curl\x64-windows-rel\lib;C:\Users\junk_\source\repos\zlib-1.3.1\out\build\x64-Debug</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;C:\Program Files\MySQL\MySQL Server 8.0\include;C:\Users\junk_\source\repos\vcpkg-master\buildtrees\curl\src\url-7_86_0-3d3d4aefd3.clean\include;C:\Users\junk_\source\repos\zlib-1.3.1\out\build\x64-Debug;C:\Users\junk_\source\repos\zlib-1.3.1</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;C:\Program Files\MySQL\MySQL Server 8.0\lib;C:\Users\junk_\source\repos\vcpkg-master\buildtrees\curl\x64-windows-rel\lib;C:\Users\junk_\source\repos\zlib-1.3.1\out\build\x64-Debug</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ModuleOutputFile>$(IntDir)</ModuleOutputFile>
+      <ModuleDependenciesFile>$(IntDir)</ModuleDependenciesFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <SourceDependenciesFile>$(IntDir)</SourceDependenciesFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CBrush.cpp" />
+    <ClCompile Include="CBrushSide.cpp" />
+    <ClCompile Include="CBrushSideIntersection.cpp" />
+    <ClCompile Include="CCamera.cpp" />
+    <ClCompile Include="CCollision.cpp" />
+    <ClCompile Include="CCollisionPrimitive.cpp" />
+    <ClCompile Include="CCommandLine.cpp" />
+    <ClCompile Include="CDebugLog.cpp" />
+    <ClCompile Include="CEntity.cpp" />
+    <ClCompile Include="CHeap.cpp" />
+    <ClCompile Include="CKeyValue.cpp" />
+    <ClCompile Include="CLine3D.cpp" />
+    <ClCompile Include="CList.cpp" />
+    <ClCompile Include="CListNode.cpp" />
+    <ClCompile Include="CLobbyServerInfo.cpp" />
+    <ClCompile Include="CBmpImage.cpp" />
+    <ClCompile Include="CColor.cpp" />
+    <ClCompile Include="CComError.cpp" />
+    <ClCompile Include="CDirectoryList.cpp" />
+    <ClCompile Include="CDXGIError.cpp" />
+    <ClCompile Include="CDXGIErrorItem.cpp" />
+    <ClCompile Include="CErrorLog.cpp" />
+    <ClCompile Include="CFrametime.cpp" />
+    <ClCompile Include="CHeapAllocator.cpp" />
+    <ClCompile Include="CHeapArray.cpp" />
+    <ClCompile Include="CHttpRequest.cpp" />
+    <ClCompile Include="CLocal.cpp" />
+    <ClCompile Include="CMesh.cpp" />
+    <ClCompile Include="CModel.cpp" />
+    <ClCompile Include="CModelManager.cpp" />
+    <ClCompile Include="CMySql.cpp" />
+    <ClCompile Include="CNetwork.cpp" />
+    <ClCompile Include="CPlane.cpp" />
+    <ClCompile Include="CPngChunk.cpp" />
+    <ClCompile Include="CPngHeader.cpp" />
+    <ClCompile Include="CPngImage.cpp" />
+    <ClCompile Include="CRawImage.cpp" />
+    <ClCompile Include="CRGBColor.cpp" />
+    <ClCompile Include="CSector.cpp" />
+    <ClCompile Include="CServerInfo.cpp" />
+    <ClCompile Include="CShaderMaterial.cpp" />
+    <ClCompile Include="CSocket.cpp" />
+    <ClCompile Include="CString.cpp" />
+    <ClCompile Include="CTerrainTile.cpp" />
+    <ClCompile Include="CTgaImage.cpp" />
+    <ClCompile Include="CTimer.cpp" />
+    <ClCompile Include="CScript.cpp" />
+    <ClCompile Include="CVec2f.cpp" />
+    <ClCompile Include="CVec3f.cpp" />
+    <ClCompile Include="CVec3i.cpp" />
+    <ClCompile Include="CVertex.cpp" />
+    <ClCompile Include="CVertex2D.cpp" />
+    <ClCompile Include="CVertexNT.cpp" />
+    <ClCompile Include="CVertexRGBA.cpp" />
+    <ClCompile Include="CVertexT.cpp" />
+    <ClCompile Include="CWebBrowser.cpp" />
+    <ClCompile Include="CWindow.cpp" />
+    <ClCompile Include="CWinsockError.cpp" />
+    <ClCompile Include="CWinsockErrorItem.cpp" />
+    <ClCompile Include="CXAudio2Error.cpp" />
+    <ClCompile Include="CXAudio2ErrorItem.cpp" />
+    <ClCompile Include="CXML.cpp" />
+    <ClCompile Include="GameCommon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CBrush.h" />
+    <ClInclude Include="CBrushSide.h" />
+    <ClInclude Include="CBrushSideIntersection.h" />
+    <ClInclude Include="CCamera.h" />
+    <ClInclude Include="CCollision.h" />
+    <ClInclude Include="CCollisionPrimitive.h" />
+    <ClInclude Include="CCommandLine.h" />
+    <ClInclude Include="CDebugLog.h" />
+    <ClInclude Include="CEntity.h" />
+    <ClInclude Include="CHeap.h" />
+    <ClInclude Include="CKeyValue.h" />
+    <ClInclude Include="CLine3D.h" />
+    <ClInclude Include="CList.h" />
+    <ClInclude Include="CListNode.h" />
+    <ClInclude Include="CLobbyServerInfo.h" />
+    <ClInclude Include="CBmpImage.h" />
+    <ClInclude Include="CColor.h" />
+    <ClInclude Include="CComError.h" />
+    <ClInclude Include="CDirectoryList.h" />
+    <ClInclude Include="CDXGIError.h" />
+    <ClInclude Include="CDXGIErrorItem.h" />
+    <ClInclude Include="CErrorLog.h" />
+    <ClInclude Include="CFrametime.h" />
+    <ClInclude Include="CHeapAllocator.h" />
+    <ClInclude Include="CHeapArray.h" />
+    <ClInclude Include="CHttpRequest.h" />
+    <ClInclude Include="CLocal.h" />
+    <ClInclude Include="CMesh.h" />
+    <ClInclude Include="CModel.h" />
+    <ClInclude Include="CModelManager.h" />
+    <ClInclude Include="CMySql.h" />
+    <ClInclude Include="CNetwork.h" />
+    <ClInclude Include="CPlane.h" />
+    <ClInclude Include="CPngChunk.h" />
+    <ClInclude Include="CPngHeader.h" />
+    <ClInclude Include="CPngImage.h" />
+    <ClInclude Include="CRawImage.h" />
+    <ClInclude Include="CRGBColor.h" />
+    <ClInclude Include="CSector.h" />
+    <ClInclude Include="CServerInfo.h" />
+    <ClInclude Include="CShaderMaterial.h" />
+    <ClInclude Include="CSocket.h" />
+    <ClInclude Include="CString.h" />
+    <ClInclude Include="CTerrainTile.h" />
+    <ClInclude Include="CTgaImage.h" />
+    <ClInclude Include="CTimer.h" />
+    <ClInclude Include="CScript.h" />
+    <ClInclude Include="CVec2f.h" />
+    <ClInclude Include="CVec3f.h" />
+    <ClInclude Include="CVec3i.h" />
+    <ClInclude Include="CVertex.h" />
+    <ClInclude Include="CVertex2D.h" />
+    <ClInclude Include="CVertexNT.h" />
+    <ClInclude Include="CVertexRGBA.h" />
+    <ClInclude Include="CVertexT.h" />
+    <ClInclude Include="CWebBrowser.h" />
+    <ClInclude Include="CWindow.h" />
+    <ClInclude Include="CWinsockError.h" />
+    <ClInclude Include="CWinsockErrorItem.h" />
+    <ClInclude Include="CXAudio2Error.h" />
+    <ClInclude Include="CXAudio2ErrorItem.h" />
+    <ClInclude Include="CXML.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\Game\packages\Microsoft.Web.WebView2.1.0.3485.44\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('..\Game\packages\Microsoft.Web.WebView2.1.0.3485.44\build\native\Microsoft.Web.WebView2.targets')" />
+    <Import Project="..\Game\packages\Microsoft.Windows.ImplementationLibrary.1.0.230202.1\build\native\Microsoft.Windows.ImplementationLibrary.targets" Condition="Exists('..\Game\packages\Microsoft.Windows.ImplementationLibrary.1.0.230202.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\Game\packages\Microsoft.Web.WebView2.1.0.3485.44\build\native\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\Game\packages\Microsoft.Web.WebView2.1.0.3485.44\build\native\Microsoft.Web.WebView2.targets'))" />
+    <Error Condition="!Exists('..\Game\packages\Microsoft.Windows.ImplementationLibrary.1.0.230202.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\Game\packages\Microsoft.Windows.ImplementationLibrary.1.0.230202.1\build\native\Microsoft.Windows.ImplementationLibrary.targets'))" />
+  </Target>
+</Project>

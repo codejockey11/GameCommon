@@ -1,0 +1,8 @@
+.vs/*
+GameCommon/*
+scripts/*
+x64/*
+*.exe
+*.dll
+*.shader
+*.txt
